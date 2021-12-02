@@ -7,9 +7,12 @@
       "resource_rent": 500,
       "duration": "1hr",
       "availability": "not_available",
+      "previous_availability": "available",
       "batch_id": "B",
       "id": 1,
-      "user_name": "abcd"
+      "user_name": "abcd",
+      "date": "01/12/2021",
+      "time": "17:45:48"
     }
   ]
 }
