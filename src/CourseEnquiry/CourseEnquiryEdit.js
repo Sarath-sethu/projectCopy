@@ -61,7 +61,7 @@ function MyForm(props) {
         window.location=`/cedetails/${props.id}`
         
     }
-    return (<div >
+    return (<div style={{marginTop:'90px'}}>
         <form onSubmit={handleSubmit} style={{textAlign:"center"}}>
             <select style ={{padding:"7px",borderRadius:"7px",border:'1px solid grey',outline:"none"}} name="enquiry_status" onChange={handleChange}>
                 <option  >select status</option>

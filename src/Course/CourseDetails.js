@@ -34,7 +34,7 @@ function CourseDetails(){
 
     return(<>
     <div > 
-    <h1>Course Details</h1>
+    <h1 style={{marginTop:'90px'}}>Course Details</h1>
     <div id="secondary">
     <h3>{course.course_name}</h3>
     <img style={{width:"200px",height:"200px"}} src={course.course_image} ></img>

@@ -47,8 +47,8 @@ function MyForm() {
             setTimeout(()=>{window.location='/CourseList'},3000)
         })
     }
-    return (<div id ="main">
-        <h1>Add Course</h1>
+    return (<div style={{marginTop:"90px"}} id ="main">
+        <h1 >Add Course</h1>
         <form onSubmit={handleSubmit}>
             <div>
                 <label>Course Name :</label>
@@ -56,7 +56,7 @@ function MyForm() {
             </div>
             <div>
                 <label>Course Fee :</label>
-                <input  style={{marginLeft:6}} type="number" name="course_fee"  value={inputs.course_fee || ""} onChange={handleChange} required />
+                <input  style={{marginLeft:16}} type="number" name="course_fee"  value={inputs.course_fee || ""} onChange={handleChange} required />
             </div>
             <div>
                 <label>Duration :</label>
@@ -64,11 +64,11 @@ function MyForm() {
             </div>
             <div>
                 <label>Criteria :</label>
-                <input  style={{marginLeft:21}} type="text" name="criteria"  value={inputs.criteria || ""} onChange={handleChange} required />
+                <input  style={{marginLeft:51}} type="text" name="criteria"  value={inputs.criteria || ""} onChange={handleChange} required />
             </div>
             <div>
                 <label>Course Image :</label>
-                <input style={{marginLeft:51}} type="text" name="course_image"  value={inputs.course_image  || ""} onChange={handleChange}  required />
+                <input  type="text" name="course_image"  value={inputs.course_image  || ""} onChange={handleChange}  required />
             </div>
             <button type="submit" onClick={notify}>Add</button>
             <ToastContainer/>

@@ -67,7 +67,7 @@ function MyForm(props) {
         
     }
     
-    return (<div id ="main">
+    return (<div style={{marginTop:'90px'}} id ="main">
         <form onSubmit={handleSubmit}>
             <select style ={{padding:"7px",borderRadius:"7px",border:'1px solid grey',outline:"none"}} name="enquiry_status" onChange={handleChange} >
                 <option   >select status</option>

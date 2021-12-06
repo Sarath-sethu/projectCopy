@@ -28,7 +28,7 @@ import ResourceEnquiryList from "./ResourceEnquiry/ResourceEnquiryList";
 import ResourceEnquiryEdit from "./ResourceEnquiry/ResourceEnquiryEdit";
 import ResourceSalesPipeLine from "./SalesPipeLine/ResourceSalesPipeLine";
 import CourseSalesPipeLine from "./SalesPipeLine/CourseSalesPipeLine";
-import AddResourceEnquiry from "./CourseEnquiry/AddCourseEnquiry";
+import AddResourceEnquiry from "./ResourceEnquiry/AddResourceEnquiry";
 import './SideBar/side.css';
 import SideBar from './SideBar/sideBar'
 
@@ -42,9 +42,10 @@ function App() {
         
         <MyRouter />
         <br /><br /><br /><br />
-        <p>Copyright 2021 - Team 3</p>
+        
       
     </div>
+    <footer style={{bottom:'0',textAlign:'center'}}><p>Copyright 2021 - Team 3</p></footer>
   </div>
 
   )

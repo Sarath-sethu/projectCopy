@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect} from "react";
 import CardLayout from "./CardLayout";
 import Search from '../Search/SearchBar';
-import '../Staff.css'
+
 
 
 
@@ -31,7 +31,7 @@ function Card(){
         }
 
         return courses.filter((course) => {
-            const courseName = course.course_name;
+            const courseName = course.course_name.toLowerCase();
             return courseName.includes(query);
         });
     };
@@ -43,21 +43,22 @@ function Card(){
 
     return (<>
         
-        <div >
+        <div>
             <Search
                 searchQuery={searchQuery}
                 setSearchQuery={setSearchQuery}
             />
             
-            <ul>
+            <span style={{display:"inline"}}>
                 {filteredPosts.map(course =>
 
-                    <li key={course.id}>
+                    <span style={{float:'left',margin:'30px 50px'}}>
                         <CardLayout details={course} />
-                    </li>
+                    </span>
 
                 )}
-            </ul>
+            </span>
+            
         </div>
 
     </>

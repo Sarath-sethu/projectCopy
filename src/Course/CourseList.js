@@ -33,7 +33,7 @@ function CourseList(){
         }
 
         return courses.filter((course) => {
-            const courseName = course.course_name;
+            const courseName = course.course_name.toLowerCase();
             return courseName.includes(query);
         });
     };

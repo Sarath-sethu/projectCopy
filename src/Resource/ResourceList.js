@@ -32,7 +32,7 @@ function ResourceList() {
         }
 
         return resources.filter((resource) => {
-            const resourceName = resource.resource_name;
+            const resourceName = resource.resource_name.toLowerCase();
             return resourceName.includes(query);
         });
     };

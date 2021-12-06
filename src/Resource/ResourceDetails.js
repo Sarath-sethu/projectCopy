@@ -31,7 +31,7 @@ function ResourceDetails(){
 
     return(<>
     <div > 
-    <h1>Resource Details</h1>
+    <h1 style={{marginTop:'90px'}}>Resource Details</h1>
     <div id="secondary">
     <img style={{width:"200px",height:"200px"}} src={resource.picture} ></img>
     <h3>Resource Name: {resource.resource_name}</h3>

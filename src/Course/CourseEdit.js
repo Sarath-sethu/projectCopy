@@ -60,7 +60,7 @@ function MyForm(props) {
             setTimeout(()=>{window.location=`/CourseDetails/${props.id}`},3000)
         })
     }
-    return (<div id ="main">
+    return (<div style={{marginTop:'90px'}} id ="main">
         <h1>Edit Book</h1>
         <form onSubmit={handleSubmit}>
             <div>

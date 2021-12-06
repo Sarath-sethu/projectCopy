@@ -24,7 +24,7 @@ function ResourceEnquiryList(){
     },[])
 
     return(<>
-    <h1>Resource Enquiry List</h1>
+    <h1 style={{marginTop:'90px'}}>Resource Enquiry List</h1>
     <div id="unorder">
     <ul>
         {resource.map(resource =>

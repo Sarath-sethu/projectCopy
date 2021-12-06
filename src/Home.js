@@ -2,8 +2,8 @@ import Card from "./Card/Card";
 function Home(){
   return(<>
     
-    <div id="homemain">
-      <h1>Welcome Home!</h1>
+    
+      <h1 style={{marginTop:"90px"}}>Welcome Home!</h1>
       {/* <p>Lorem Ipsum is simply dummy text of 
         the printing and typesetting industry. 
         Lorem Ipsum has been the industry's 
@@ -20,7 +20,7 @@ function Home(){
         software like Aldus PageMaker including 
         versions of Lorem Ipsum.</p> */}
         <Card/>
-    </div>
+    
   </>
 
   )

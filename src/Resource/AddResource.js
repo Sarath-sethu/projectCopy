@@ -45,7 +45,7 @@ function MyForm() {
             setTimeout(()=>{window.location='/ResourceList'},3000)
         })
     }
-    return (<div id ="main">
+    return (<div style={{marginTop:'90px'}} id ="main">
         <h1>Add Resource</h1>
         <form onSubmit={handleSubmit}>
             <div>
@@ -54,19 +54,19 @@ function MyForm() {
             </div>
             <div>
                 <label>Resource Rent :</label>
-                <input  style={{marginLeft:6}} type="number" name="resource_rent"  value={inputs.resource_rent || ""} onChange={handleChange} required />
+                <input  style={{marginLeft:7}} type="number" name="resource_rent"  value={inputs.resource_rent || ""} onChange={handleChange} required />
             </div>
             <div>
                 <label>Duration :</label>
-                <input  style={{marginLeft:41}} type="text" name="duration"  value={inputs.duration || ""} onChange={handleChange} required />
+                <input  style={{marginLeft:51}} type="text" name="duration"  value={inputs.duration || ""} onChange={handleChange} required />
             </div>
             <div>
                 <label>Picture :</label>
-                <input style={{marginLeft:51}} type="text" name="picture"  value={inputs.picture  || ""} onChange={handleChange}  required />
+                <input style={{marginLeft:61}} type="text" name="picture"  value={inputs.picture  || ""} onChange={handleChange}  required />
             </div>
             <div>
                 <label>Description :</label>
-                <textarea style={{marginLeft:23}} name="description"  value={inputs.description  || ""} onChange={handleChange}  required />
+                <textarea style={{marginLeft:33}} name="description"  value={inputs.description  || ""} onChange={handleChange}  required />
             </div>
             
             

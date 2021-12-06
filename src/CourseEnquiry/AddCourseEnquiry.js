@@ -47,7 +47,7 @@ function MyForm() {
             setTimeout(()=>{window.location='/CourseList'},3000)
         })
     }
-    return (<div id ="main">
+    return (<div style={{marginTop:'90px'}} id ="main">
         <h1>Enquire</h1>
         <form onSubmit={handleSubmit}>
             <div>
@@ -56,7 +56,7 @@ function MyForm() {
             </div>
             <div>
                 <label>User Name :</label>
-                <input  style={{marginLeft:6}} type="text" name="user_name"  value={inputs.user_name || ""} onChange={handleChange} required />
+                <input  style={{marginLeft:18}} type="text" name="user_name"  value={inputs.user_name || ""} onChange={handleChange} required />
             </div>
             <button type="submit" onClick={notify}>Enquire</button>
             <ToastContainer/>
